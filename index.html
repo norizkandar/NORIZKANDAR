@@ -1,0 +1,843 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY SEO -->
+  <title>Mohamad Norizkandar | App Developer & Tech Creator</title>
+
+  <meta name="description"
+    content="Discover Mohamad Norizkandar, a young app developer and technology creator from Malaysia. Explore software projects, digital products, web development and Eonix Tech Studio.">
+
+  <meta name="keywords"
+    content="Mohamad Norizkandar, Norizkandar, app developer Malaysia, young programmer Malaysia, software developer, Eonix Tech Studio, Smart Academy, Smart Car Hub, web developer">
+
+  <meta name="author" content="Mohamad Norizkandar">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#08090C">
+
+  <!-- Replace this URL if your portfolio uses another domain -->
+  <link rel="canonical" href="https://norizkandar.github.io/">
+
+  <!-- SOCIAL SHARING -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohamad Norizkandar | Digital Portfolio">
+  <meta property="og:description"
+    content="Explore the projects, ideas and digital experiences of Mohamad Norizkandar.">
+  <meta property="og:url" content="https://norizkandar.github.io/">
+  <meta property="og:site_name" content="Norizkandar">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mohamad Norizkandar">
+  <meta name="twitter:description"
+    content="App development, programming and digital innovation.">
+
+  <!-- STRUCTURED DATA FOR SEARCH ENGINES -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://norizkandar.github.io/#person",
+    "name": "Mohamad Norizkandar",
+    "url": "https://norizkandar.github.io/",
+    "description": "A Malaysian student developer interested in app development, programming and digital product creation.",
+    "jobTitle": "Student Developer",
+    "knowsAbout": [
+      "JavaScript",
+      "React Native",
+      "Expo",
+      "Web Development",
+      "Supabase",
+      "Software Development"
+    ],
+    "sameAs": [
+      "https://github.com/norizkandar",
+      "https://www.tiktok.com/@iz_andar"
+    ]
+  }
+  </script>
+
+  <!-- Google Search Console verification:
+       Add your actual verification meta tag here when available. -->
+
+  <style>
+    :root {
+      --bg: #08090c;
+      --panel: #10131a;
+      --panel2: #0c1017;
+      --blue: #39bfff;
+      --cyan: #78e6ff;
+      --white: #f3f6fc;
+      --muted: #99a5b8;
+      --border: rgba(120, 190, 255, .15);
+      --glow: 0 0 35px rgba(57, 191, 255, .12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      background:
+        radial-gradient(ellipse at 75% 5%, #10223b 0, transparent 38%),
+        radial-gradient(ellipse at 5% 45%, #101727 0, transparent 30%),
+        var(--bg);
+      color: var(--white);
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 5px;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    .top-line {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--blue), var(--cyan), transparent);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 9, 12, .88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 1.12rem;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .brand span {
+      color: var(--blue);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .nav-links a {
+      font-size: .85rem;
+      color: var(--muted);
+      transition: color .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--cyan);
+    }
+
+    .nav-cta, .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 19px;
+      border: 1px solid rgba(57, 191, 255, .45);
+      border-radius: 8px;
+      background: rgba(57, 191, 255, .08);
+      color: var(--cyan);
+      font-weight: 700;
+      font-size: .9rem;
+      transition: .25s;
+    }
+
+    .button.primary {
+      background: var(--blue);
+      color: #061019;
+      border-color: var(--blue);
+    }
+
+    .button:hover, .nav-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--glow);
+    }
+
+    .hero {
+      min-height: 650px;
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      align-items: center;
+      gap: 60px;
+      padding-top: 80px;
+      padding-bottom: 90px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 12px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      background: rgba(57, 191, 255, .05);
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .7rem;
+      font-weight: 800;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 12px var(--blue);
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 5.3rem);
+      line-height: 1.06;
+      letter-spacing: -3px;
+      margin: 28px 0 22px;
+      overflow-wrap: anywhere;
+    }
+
+    .gradient {
+      background: linear-gradient(100deg, #fff, var(--cyan), var(--blue));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-description {
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .hero-note {
+      color: #75849a;
+      font-size: .8rem;
+      margin-top: 28px;
+    }
+
+    .orbit-card {
+      position: relative;
+      min-height: 370px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .orbit {
+      position: absolute;
+      width: 290px;
+      height: 290px;
+      border: 1px solid rgba(57, 191, 255, .23);
+      border-radius: 50%;
+      animation: rotate 24s linear infinite;
+    }
+
+    .orbit::before, .orbit::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(57, 191, 255, .12);
+      border-radius: 50%;
+      inset: 25px;
+    }
+
+    .orbit::after {
+      inset: 55px;
+    }
+
+    .orbit-core {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: radial-gradient(circle, #183b59, #0b1421 70%);
+      border: 1px solid rgba(120, 230, 255, .45);
+      box-shadow: 0 0 75px rgba(57, 191, 255, .16);
+      z-index: 1;
+    }
+
+    .orbit-core strong {
+      display: block;
+      font-size: 2.3rem;
+      color: var(--cyan);
+      letter-spacing: 4px;
+    }
+
+    .orbit-core span {
+      display: block;
+      font-size: .67rem;
+      letter-spacing: 2px;
+      color: var(--muted);
+    }
+
+    @keyframes rotate {
+      to { transform: rotate(360deg); }
+    }
+
+    section {
+      padding: 95px 0;
+      border-top: 1px solid rgba(120, 190, 255, .08);
+    }
+
+    .section-tag {
+      color: var(--blue);
+      font-size: .74rem;
+      letter-spacing: 3px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin: 12px 0 16px;
+    }
+
+    .section-description {
+      max-width: 680px;
+      color: var(--muted);
+      margin-bottom: 38px;
+    }
+
+    .about-grid, .project-grid, .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .panel, .project-card {
+      background: linear-gradient(145deg, rgba(18, 24, 35, .94), rgba(10, 13, 19, .94));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: var(--glow);
+    }
+
+    .panel h3, .project-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+    }
+
+    .panel p, .project-card p {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    .project-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 290px;
+      transition: transform .25s, border-color .25s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(57, 191, 255, .5);
+    }
+
+    .project-icon {
+      width: 49px;
+      height: 49px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      margin-bottom: 23px;
+      background: rgba(57, 191, 255, .1);
+      border: 1px solid var(--border);
+      color: var(--cyan);
+      font-size: 1.4rem;
+    }
+
+    .project-card p {
+      margin-bottom: 24px;
+    }
+
+    .project-link {
+      margin-top: auto;
+      color: var(--cyan);
+      font-size: .85rem;
+      font-weight: 700;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .chip {
+      padding: 8px 13px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      color: #c5d7e9;
+      background: rgba(57, 191, 255, .04);
+      font-size: .84rem;
+    }
+
+    .studio {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .studio-mark {
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 900;
+      letter-spacing: -2px;
+      color: var(--cyan);
+    }
+
+    .contact-panel {
+      text-align: center;
+      padding: 55px 25px;
+      background:
+        radial-gradient(ellipse at center, rgba(24, 76, 113, .23), transparent 70%),
+        var(--panel2);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    .contact-panel .section-description {
+      margin: 0 auto 25px;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .social-links a:hover {
+      color: var(--cyan);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 0;
+      color: #8490a3;
+      font-size: .8rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    @media (max-width: 850px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-top: 70px;
+      }
+
+      .orbit-card {
+        min-height: 310px;
+      }
+
+      .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        min-height: 68px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: .75rem;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      h1 {
+        letter-spacing: -1.8px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .about-grid, .project-grid, .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .studio {
+        grid-template-columns: 1fr;
+      }
+
+      .panel, .project-card {
+        padding: 23px;
+      }
+
+      .orbit {
+        width: 260px;
+        height: 260px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-line"></div>
+
+  <header>
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand">NORIZ<span>KANDAR</span></a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="nav-cta" href="https://github.com/norizkandar"
+         target="_blank" rel="noopener noreferrer">
+        GitHub ↗
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="container hero" id="home">
+      <div>
+        <div class="eyebrow">
+          <span class="dot"></span>
+          Personal Digital Portfolio
+        </div>
+
+        <h1>
+          Mohamad<br>
+          <span class="gradient">Norizkandar.</span>
+        </h1>
+
+        <p class="hero-description">
+          Student developer, programmer and technology creator from
+          Malaysia. Exploring the world of software development and
+          building digital experiences through ideas, creativity and code.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button primary" href="#projects">Explore My Projects ↗</a>
+          <a class="button" href="#about">Discover My Story</a>
+        </div>
+
+        <p class="hero-note">
+          SOFTWARE DEVELOPMENT · DIGITAL PRODUCTS · TECHNOLOGY
+        </p>
+      </div>
+
+      <div class="orbit-card" aria-hidden="true">
+        <div class="orbit"></div>
+        <div class="orbit-core">
+          <div>
+            <strong>MN</strong>
+            <span>BUILD THE FUTURE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-tag">01 / ABOUT ME</div>
+        <h2 class="section-title">
+          Turning ideas into <span class="gradient">digital reality.</span>
+        </h2>
+
+        <p class="section-description">
+          I am Mohamad Norizkandar, a student developer from Malaysia
+          with an interest in programming, app development and modern
+          technology. My goal is to keep learning, experiment with new
+          ideas and turn concepts into useful digital products.
+        </p>
+
+        <div class="about-grid">
+          <article class="panel">
+            <h3>01. My Journey</h3>
+            <p>
+              My development journey is built around learning by doing:
+              exploring code, building prototypes, solving problems and
+              improving projects one step at a time.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>02. My Vision</h3>
+            <p>
+              To develop practical software, create meaningful digital
+              experiences and continue growing as a developer and
+              technology entrepreneur.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-tag">02 / SELECTED WORK</div>
+        <h2 class="section-title">
+          Ideas in <span class="gradient">development.</span>
+        </h2>
+
+        <p class="section-description">
+          Explore selected projects and experiments from my software
+          development journey. Features and availability may vary
+          between prototypes and live versions.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">✦</div>
+            <h3>Smart Academy</h3>
+            <p>
+              An education platform concept focused on online classes,
+              learning resources, homework, quizzes and student progress.
+            </p>
+            <a class="project-link"
+               href="https://github.com/norizkandar/eonix-tech-studio"
+               target="_blank" rel="noopener noreferrer">
+              Explore project repository ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">⌘</div>
+            <h3>Smart Car Hub</h3>
+            <p>
+              An automotive platform project exploring a unified digital
+              experience for car-related content and features.
+            </p>
+            <a class="project-link"
+               href="https://github.com/norizkandar/smart-car-hub"
+               target="_blank" rel="noopener noreferrer">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">◈</div>
+            <h3>Eonix Tech Studio</h3>
+            <p>
+              A technology studio project focused on digital ideas,
+              web experiences and software development.
+            </p>
+            <a class="project-link"
+               href="https://norizkandar.github.io/eonix-tech-studio/"
+               target="_blank" rel="noopener noreferrer">
+              Visit studio website ↗
+            </a>
+          </article>
+        </div>
+
+        <div style="margin-top:30px">
+          <a class="button"
+             href="https://github.com/norizkandar"
+             target="_blank" rel="noopener noreferrer">
+            Explore All Repositories ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-tag">03 / TECHNOLOGY</div>
+        <h2 class="section-title">
+          Tools I use to <span class="gradient">create.</span>
+        </h2>
+
+        <p class="section-description">
+          Technologies I have explored through learning and project work.
+          My skills continue to develop as I build and experiment.
+        </p>
+
+        <div class="skills-grid">
+          <article class="panel">
+            <h3>Development</h3>
+            <p>Languages and frameworks used to build digital products.</p>
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">React Native</span>
+              <span class="chip">Expo</span>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+            </div>
+          </article>
+
+          <article class="panel">
+            <h3>Tools & Platforms</h3>
+            <p>Tools used to develop, test and manage projects.</p>
+            <div class="chips">
+              <span class="chip">Visual Studio Code</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">GitHub Pages</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO -->
+    <section id="studio">
+      <div class="container">
+        <div class="panel studio">
+          <div>
+            <div class="section-tag">04 / MY TECH PROJECT</div>
+            <h2 class="section-title">
+              Meet <span class="gradient">Eonix Tech Studio.</span>
+            </h2>
+            <p class="section-description" style="margin-bottom:20px">
+              A personal technology initiative exploring software,
+              websites and digital product ideas. Discover the work,
+              experiments and projects behind the studio.
+            </p>
+            <a class="button primary"
+               href="https://norizkandar.github.io/eonix-tech-studio/"
+               target="_blank" rel="noopener noreferrer">
+              Explore Eonix ↗
+            </a>
+          </div>
+
+          <div class="studio-mark" aria-hidden="true">EONIX.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div class="section-tag">05 / CONNECT</div>
+          <h2 class="section-title">
+            Let's build <span class="gradient">what's next.</span>
+          </h2>
+
+          <p class="section-description">
+            Follow my development journey, explore my code and discover
+            the projects I am working on.
+          </p>
+
+          <div class="hero-buttons" style="justify-content:center">
+            <a class="button primary"
+               href="https://github.com/norizkandar"
+               target="_blank" rel="noopener noreferrer">
+              Follow on GitHub ↗
+            </a>
+            <a class="button"
+               href="https://www.tiktok.com/@iz_andar"
+               target="_blank" rel="noopener noreferrer">
+              TikTok ↗
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/norizkandar"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://norizkandar.github.io/eonix-tech-studio/"
+               target="_blank" rel="noopener noreferrer">Eonix Tech Studio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>© <span id="year">2026</span> Mohamad Norizkandar</span>
+      <span>Designed for ideas. Built with code.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
